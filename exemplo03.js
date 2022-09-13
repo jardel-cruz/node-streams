@@ -4,13 +4,13 @@ import { readdir } from "fs/promises";
 import { promisify } from "util";
 import { pipeline, Transform } from "stream";
 
-//Lig para debug.
+//Lib para debug.
 import debug from "debug";
-//Lig para converter csv para json. 
+//Lib para converter csv para json. 
 import csvtojson from "csvtojson";
-//Lig para converter json para csv.
+//Lib para converter json para csv.
 import jsonToCsv from "json-to-csv-stream";
-//Lig para concatenar streams.
+//Lib para concatenar streams.
 import StreamConcat from "stream-concat";
 
 //Com isso conseguimos o CWD em que o arquivo esteja, independente de onde ele seja rodado.
